@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Matemasie&family=Nanum+Pen+Script&display=swap');
+
+.navbar{
+    font-family: "Caveat Brush", cursive;
+    font-style: normal;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+.navbar-brand, .offcanvas-title{
+    color: #1630c4;
+    transition: 0.3s color;
+}
+
+.login-button{
+    background-color: #1630c4;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.login-button:hover{
+    background-color:  #112591;
+}
+
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link{
+    color: #666777;
+    position: relative;
+}
+
+.nav-link:hover{
+    color: #000;
+}
+
+@media (min-width: 991px){
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2.5px;
+        background-color: #1630c4;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before{
+        width: 80%;
+        visibility: visible;
+    }
+
+}
+
+.hero-section{
+    background: url(../img/hero.png) no-repeat center;
+    background-size: 98.8%;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.main{
+    margin: 6rem 0;
+}

@@ -1,0 +1,1 @@
+<a {{ $attributes }} class="nav-link mx-lg-2" aria-current="page">{{ $slot }}</a>
