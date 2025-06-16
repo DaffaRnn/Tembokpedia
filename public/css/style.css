@@ -1,5 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Matemasie&family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Matemasie&family=Nanum+Pen+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Template */
+.main{
+    margin: 0;
+    padding: 0;
+}
+
+.btn{
+    background-color: #1630c4;
+}
+
+.btn:hover{
+    background-color: #112591;
+
+}
+
+h5{
+    font-family: "Caveat Brush", cursive;
+    font-style: normal;
+    font-size: 30px;
+}
+
+p, .text{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.text{
+    margin-bottom: 15px;
+}
+
+b{
+    font-family: "Caveat Brush", cursive;
+    font-style: normal;
+    font-size: 20px;
+    color: #1630c4;
+}
+/* End Template */
+
+/* Navbar */
 .navbar{
     font-family: "Caveat Brush", cursive;
     font-style: normal;
@@ -45,6 +86,115 @@
 .nav-link:hover{
     color: #000;
 }
+/* End Navbar */
+
+footer{
+    background-color: #f0f1f1;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Home */
+.hero-section{
+    background: url(../img/hero.jpeg) no-repeat center;
+    background-size: cover;
+    background-position: 7% 50%;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-section::before{
+    content: "";
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.beranda{
+    margin: 100px 0;
+    background-color: #f0f1f1;
+    /* border: 1px solid red; */
+}
+
+.beranda h1{
+    font-family: "Caveat Brush", cursive;
+    font-size: 50px;
+}
+
+.beranda p{
+    line-height: 27px;
+}
+
+.card-program{
+    position: relative;
+    overflow: hidden; /* penting agar background tidak melebar keluar */
+    z-index: 1;
+    background: none;
+}
+
+.card-program::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/hero1.png');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5); /* filter gelap */
+    z-index: -1;
+}
+
+.card-active{
+    transition: transform 0.3s ease;
+}
+
+.card-active:hover{
+    transform: scale(1.1);
+}
+
+.icon-wrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.icon-active{
+    transition: transform 0.3s ease;
+}
+
+.icon-active:hover{
+    background-color: #f6f6f6;
+}
+/* End Home */
+
+.tentang-st{
+    margin: 110px 0 80px;
+    background-color: #f0f1f1;
+    /* border: 1px solid red; */
+}
+
+.tentang{
+    margin: 80px 0;
+    background-color: #f0f1f1;
+    /* border: 1px solid red; */
+}
+
+.tentang-st h1, .tentang h1{
+    font-family: "Caveat Brush", cursive;
+    font-size: 50px;
+}
+
+.tentang-st p, .tentang p{
+    line-height: 27px;
+}
 
 @media (min-width: 991px){
     .nav-link::before{
@@ -59,30 +209,49 @@
         visibility: hidden;
         transition: 0.3s ease-in-out;
     }
-
+    
     .nav-link:hover::before{
         width: 80%;
         visibility: visible;
     }
 
+    .beranda #desc{
+        padding: 0 70px;
+    }
+
 }
 
-.hero-section{
-    background: url(../img/hero.png) no-repeat center;
-    background-size: 98.8%;
-    width: 100%;
-    height: 100vh;
+@media (max-width: 768px){
+    .beranda #img{
+        width: 55%;
+    }
+
+    .beranda #desc{
+        margin-top: 2rem;
+    }
+
+    .beranda h1{
+        font-size: 35px;
+    }
+
+   .beranda #desc{
+        padding: 0 60px;
+    }
+
 }
 
-.hero-section::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
+@media (max-width: 576px){
+    .beranda #img{
+        width: 55%;
+    }
 
-.main{
-    margin: 6rem 0;
+    .beranda h1{
+        font-size: 30px;
+    }
+
+    .beranda p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
 }
