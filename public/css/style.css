@@ -38,6 +38,10 @@ b{
     font-size: 20px;
     color: #1630c4;
 }
+
+.span{
+   color: #1630c4; 
+}
 /* End Template */
 
 /* Navbar */
@@ -93,7 +97,7 @@ footer{
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Home */
+/* Halaman Beranda */
 .hero-section{
     background: url(../img/hero.jpeg) no-repeat center;
     background-size: cover;
@@ -118,7 +122,7 @@ footer{
     /* border: 1px solid red; */
 }
 
-.beranda h1{
+.beranda h1, .program-st h1{
     font-family: "Caveat Brush", cursive;
     font-size: 50px;
 }
@@ -173,9 +177,10 @@ footer{
 .icon-active:hover{
     background-color: #f6f6f6;
 }
-/* End Home */
+/* Akhir Halaman Beranda */
 
-.tentang-st{
+/* Halaman Tentang */
+.tentang-st, .program-st{
     margin: 110px 0 80px;
     background-color: #f0f1f1;
     /* border: 1px solid red; */
@@ -195,6 +200,24 @@ footer{
 .tentang-st p, .tentang p{
     line-height: 27px;
 }
+/* Akhir Halaman Tentang */
+
+/* Halaman Galeri */
+ .gallery-card {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.gallery-card:hover {
+    transform: scale(1.03);
+}
+
+.img-thumbnail {
+    border-radius: 12px;
+    object-fit: cover;
+    height: 220px;
+}
+/* Akhir Halaman Galeri */
 
 @media (min-width: 991px){
     .nav-link::before{
@@ -252,6 +275,10 @@ footer{
     .beranda p{
         font-size: 14px;
         line-height: 20px;
+    }
+
+    .search-wrapper {
+        max-width: 260px;
     }
 
 }

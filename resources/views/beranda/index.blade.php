@@ -33,9 +33,9 @@
         <div class="beranda py-5 mx-3 rounded-4 shadow">
             <div class="beranda-aktivitas">
 
-                {{-- <div class="text-center mb-5">
-                    <h1 class="mb-4">Aktivitas Kami</h1>
-                </div> --}}
+                <div class="text-center mb-5">
+                    <h1 class="mb-4">Manfaat Mengikuti Program Kami <span class="text-danger">!!</span></h1>
+                </div>
 
                 <div class="row justify-content-evenly mx-3">
         
