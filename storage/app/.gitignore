@@ -3,5 +3,7 @@
 !public/
 !.gitignore
 
-!/storage/app/public/img
-!/storage/app/public/img/*
+!/storage/app/public/gallery
+!/storage/app/public/gallery/*
+!/storage/app/public/programs
+!/storage/app/public/programs/*
