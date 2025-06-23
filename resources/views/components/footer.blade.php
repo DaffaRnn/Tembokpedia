@@ -3,7 +3,7 @@
         <div class="row text-md-left">
 
             <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-5 d-flex justify-content-center">
-                <img src="../img/logo-footer.png" alt="Tembokpedia" class="card-active" style="width: 70%">
+                <img src="{{ asset('img/logo-footer.png') }}" alt="Tembokpedia" class="card-active" style="width: 70%">
             </div>
 
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">

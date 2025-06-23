@@ -9,52 +9,6 @@ class ProgramController extends Controller
 {
     public function index(Request $request)
     {
-        //opsi 1
-        // Jika ada pencarian
-        // $search = $request->query('search');
-
-        // $query = Program::query();
-
-        // if ($search) {
-        //     $query->where('title', 'like', "%$search%")
-        //           ->orWhere('location', 'like', "%$search%");
-        // }
-
-        // Pagination dan sorting by date (default DESC)
-        // $programs = $query->orderBy('date', 'desc')->paginate(6);
-
-        // return view('program.index', compact('programs', 'search'), ['title' => 'Program']);
-
-        //opsi 2
-        // $search = $request->input('search');
-
-        // Ambil program berdasarkan status, urutkan:
-        // 1. Sedang Berlangsung
-        // 2. Segera Dimulai
-        // 3. Selesai
-        // $statusOrder = [
-        //     'Sedang Berlangsung' => 1,
-        //     'Segera Dimulai' => 2,
-        //     'Selesai' => 3
-        // ];
-
-        // $programs = Program::when($search, function ($query) use ($search) {
-        //         $query->where('title', 'like', "%$search%")
-        //               ->orWhere('description', 'like', "%$search%")
-        //               ->orWhere('location', 'like', "%$search%");
-        //     })
-        //     ->get()
-        //     ->sortBy(function ($item) use ($statusOrder) {
-        //         return $statusOrder[$item->status] ?? 99;
-        //     });
-
-        // return view('program.index', [
-        //     'programs' => $programs,
-        //     'search' => $search,
-        //     'title' => 'Program'
-        // ]);
-
-        //opsi 3
         $search = $request->input('search');
 
         // Buat query builder untuk program
@@ -85,5 +39,11 @@ class ProgramController extends Controller
         ]);
 
 
+    }
+
+    public function register($id){
+        $program = Program::findOrFail($id); // cari berdasarkan id, akan error 404 jika tidak ditemukan
+
+        return view('program.register', compact('program'), ["title" => "Registrasi"]);
     }
 }

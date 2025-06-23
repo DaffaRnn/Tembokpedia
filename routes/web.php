@@ -3,7 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\ProgramController;
-use App\Http\Controllers\ProgramRegisterController;
 use App\Http\Controllers\HistoriController;
 
 Route::get('/', function () {
@@ -16,7 +15,7 @@ Route::get('/tentang', function () {
 
 Route::get('/program', [ProgramController::class, 'index'])->name('program.index');
 
-Route::get('/program/{id}/register', [ProgramRegisterController::class, 'create'])->name('program.register');
+Route::get('/program/{id}/register', [ProgramController::class, 'register'])->name('program.register');
 
 Route::get('/galeri', [GalleryController::class, 'index'])->name('galeri.index');;
 

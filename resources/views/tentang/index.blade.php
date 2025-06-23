@@ -11,13 +11,13 @@
                     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style="width: 600px;">
                         <div class="carousel-inner">
                             <div class="carousel-item active px-3">
-                                <img src="../img/img1.jpg" class="d-block w-100 rounded-5" alt="..." style="height: 400px; object-fit: cover;">
+                                <img src="{{ asset('img/img1.jpg') }}" class="d-block w-100 rounded-5" alt="..." style="height: 400px; object-fit: cover;">
                             </div>
                             <div class="carousel-item px-3">
-                                <img src="../img/img2.jpg" class="d-block w-100 rounded-5" alt="..." style="height: 400px; object-fit: cover;">
+                                <img src="{{ asset('img/img2.jpg') }}" class="d-block w-100 rounded-5" alt="..." style="height: 400px; object-fit: cover;">
                             </div>
                             <div class="carousel-item px-3">
-                                <img src="../img/img3.jpg" class="d-block w-100 rounded-5" alt="..." style="height: 400px; object-fit: cover;">
+                                <img src="{{ asset('img/img3.jpg') }}" class="d-block w-100 rounded-5" alt="..." style="height: 400px; object-fit: cover;">
                             </div>
                         </div>
                     </div>
