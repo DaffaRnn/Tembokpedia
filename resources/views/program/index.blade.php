@@ -55,7 +55,7 @@
                                     </p>
 
                                     <!-- Deskripsi -->
-                                    <p class="card-text small mb-2">{{ $program->description }}</p>
+                                    <p class="card-text small mb-2">{{ Str::limit($program->description, 200) }}</p>
 
                                     <!-- List Kegiatan -->
                                     <ul class="list-unstyled small mb-2">
@@ -68,9 +68,12 @@
                                     @if ($program->status === 'Sedang Berlangsung')
                                         <button class="btn btn-secondary rounded-pill mt-1 w-100" disabled>Program Sedang Berlangsung</button>
                                     @elseif ($program->status === 'Selesai')
-                                        <a href="{{ route('histori.index', $program->id) }}" class="btn btn-outline-secondary rounded-pill mt-1 w-100">Lihat Riwayat</a>
+                                        <a href="{{ route('histori.show', $program->id) }}" class="btn btn-outline-secondary rounded-pill mt-1 w-100">Lihat Riwayat</a>
                                     @else
-                                        <a href="{{ route('program.register', $program->id) }}" class="btn btn-primary rounded-pill mt-1 w-100">Daftar jadi Relawan</a>
+                                        <button type="button" class="btn btn-primary rounded-pill mt-1 w-100" data-bs-toggle="modal" data-bs-target="#confirmModal" data-program-id="{{ $program->id }}">
+                                            Daftar Jadi Relawan
+                                        </button>
+                                        {{-- <a href="{{ route('program.register', $program->id) }}" class="btn btn-primary rounded-pill mt-1 w-100" data-bs-toggle="modal" data-bs-target="#confirmModal"></a> --}}
                                     @endif
                                 </div>
                             </div>
@@ -93,8 +96,6 @@
             </div>
         </div>
     </section>
-
-
     {{-- <section class="container-fluid">
         <div class="program-st py-5 mx-3 rounded-4 shadow">
 
@@ -253,5 +254,40 @@
             </div>
         </div>
     </section>  --}}
-    
+
+    <!-- MODAL KONFIRMASI -->
+    <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmModalLabel">Peringatan <span class="text-danger">!!</span></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+            </div>
+            <div class="modal-body">
+                Sebelum mendaftar menjadi relawan, Apakah kamu sudah Membaca Persyaratan?
+            </div>
+            <div class="modal-footer">
+                {{-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Belum</button> --}}
+                <a href="{{ route('tentang.index') }}" class="btn btn-secondary">Baca Sekarang</a>
+                <a href="#" id="confirmRegisterBtn" class="btn btn-primary">Ya, Sudah</a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    @if(session('success'))
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Berhasil!',
+                    text: '{{ session('success') }}',
+                    confirmButtonText: 'OK',
+                    confirmButtonColor: '#3085d6'
+                });
+            });
+        </script>
+    @endif
+       
 </x-layout>

@@ -219,6 +219,16 @@ footer{
 }
 /* Akhir Halaman Galeri */
 
+.artikel {
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: justify;
+    letter-spacing: 0.3px;
+    color: #333;
+    font-weight: 300;
+}
+
 @media (min-width: 991px){
     .nav-link::before{
         content: "";

@@ -24,7 +24,7 @@
                     <div class="modal-dialog modal-lg modal-dialog-centered">
                         <div class="modal-content">
                         <div class="modal-body p-0">
-                            <img src="{{ asset('storage/' . $item->image_path) }}" class="img-fluid rounded mx-auto d-block shadow" alt="Detail Karya" style="max-width: 700px; width: 100%;">
+                            <img src="{{ asset('storage/' . $item->image_path) }}" class="img-fluid rounded mx-auto mt-5 d-block shadow" alt="Detail Karya" style="max-width: 700px; width: 75%;">
                             <div class="p-3">
                             <h5>Judul Karya: {{ $item->title }}</h5>
                             <p>{{ $item->description }}</p>

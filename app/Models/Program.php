@@ -24,4 +24,14 @@ class Program extends Model
         'date' => 'date',
         'activities' => 'array',
     ];
+
+    public function relawan(){
+        return $this->belongsToMany(Relawan::class, 'registrasi')
+                    ->withPivot('diterima', 'alasan')
+                    ->withTimestamps();
+    }
+
+    public function histori() {
+        return $this->hasOne(Histori::class);
+    }
 }

@@ -1,7 +1,8 @@
 *
+!*/
+!*.jpg
+!*.jpeg
+!*.png
+!*.webp
+!*.gif
 !.gitignore
-
-!/storage/app/public/gallery
-!/storage/app/public/gallery/*
-!/storage/app/public/programs
-!/storage/app/public/programs/*

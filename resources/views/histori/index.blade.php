@@ -11,62 +11,35 @@
 
             <div class="row justify-content-center mx-5">
 
-                <div class="col-lg-10 col-md-11 col-sm-12 my-2 mx-auto px-5 mb-3 card-active">
-                    <div class="card shadow">
-                        <div class="row g-0">
-                            <div class="col-lg-3 col-md-4 col-sm-6">
-                                <img src="{{ asset('img/default_1.jpg') }}" class="img-fluid rounded-start h-100 w-100" alt="Gambar Program" style="object-fit: cover">
-                            </div>
-                            <div class="col-lg-9 col-md-8 col-sm-6">
-                                <div class="card-body">
-                                    <h5 class="card-title mb-1">Melukis di SDN 01</h5>
-                                    <p class="mb-1"><i class="bi bi-calendar-event"></i> 20 Juni 2025 &nbsp; | &nbsp; <i class="bi bi-geo-alt"></i> SDN 01 Sukamulya</p>
-                                    <p class="mb-2"><i class="bi bi-easel"></i> Tema: Karakter & Visual Cerita</p>
-                                    <span class="badge bg-success">Selesai</span>
-                                    <a href="#" class="btn btn-primary btn-sm float-end rounded-3">Lihat Detail</a>
+                @foreach ($histories as $history)
+                    <div class="col-lg-10 col-md-11 col-sm-12 my-2 mx-auto  mb-3">
+                        <div class="card shadow">
+                            <div class="row g-0">
+                                <div class="col-lg-3 col-md-4 col-sm-6">
+                                    @if ($history->image_path)
+                                        <img src="{{ asset('storage/' . $history->image_path) }}" class="img-fluid rounded-start w-100" alt="Gambar Program" style="object-fit: cover">
+                                    @endif
+                                </div>
+                                <div class="col-lg-9 col-md-8 col-sm-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-1">{{ $history->title }}</h5>
+                                        <p class="text-muted mb-1">
+                                            <i class="bx bx-calendar"></i> {{ \Carbon\Carbon::parse($history->tanggal_selesai)->format('d M Y') }}
+                                        </p>
+                                        <p class="card-text small">{{ Str::limit($history->description, 100) }}</p>
+                                        <span class="badge bg-secondary">Program: {{ $history->program->title }}</span>
+                                        <a href="{{ route('histori.show', $history->id) }}" class="btn btn-primary btn-md float-end rounded-3">Lihat Detail</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-10 col-md-11 col-sm-12 my-2 mx-auto px-5 mb-3 card-active">
-                    <div class="card shadow">
-                        <div class="row g-0">
-                            <div class="col-lg-3 col-md-4 col-sm-6">
-                                <img src="{{ asset('img/default_1.jpg') }}" class="img-fluid rounded-start h-100 w-100" alt="Gambar Program" style="object-fit: cover">
-                            </div>
-                            <div class="col-lg-9 col-md-8 col-sm-6">
-                                <div class="card-body">
-                                    <h5 class="card-title mb-1">Melukis di SDN 01</h5>
-                                    <p class="mb-1"><i class="bi bi-calendar-event"></i> 20 Juni 2025 &nbsp; | &nbsp; <i class="bi bi-geo-alt"></i> SDN 01 Sukamulya</p>
-                                    <p class="mb-2"><i class="bi bi-easel"></i> Tema: Karakter & Visual Cerita</p>
-                                    <span class="badge bg-success">Selesai</span>
-                                    <a href="#" class="btn btn-primary btn-sm float-end rounded-3">Lihat Detail</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-10 col-md-11 col-sm-12 my-2 mx-auto px-5 mb-3 card-active">
-                    <div class="card shadow">
-                        <div class="row g-0">
-                            <div class="col-lg-3 col-md-4 col-sm-6">
-                                <img src="{{ asset('img/default_1.jpg') }}" class="img-fluid rounded-start h-100 w-100" alt="Gambar Program" style="object-fit: cover">
-                            </div>
-                            <div class="col-lg-9 col-md-8 col-sm-6">
-                                <div class="card-body">
-                                    <h5 class="card-title mb-1">Melukis di SDN 01</h5>
-                                    <p class="mb-1"><i class="bi bi-calendar-event"></i> 20 Juni 2025 &nbsp; | &nbsp; <i class="bi bi-geo-alt"></i> SDN 01 Sukamulya</p>
-                                    <p class="mb-2"><i class="bi bi-easel"></i> Tema: Karakter & Visual Cerita</p>
-                                    <span class="badge bg-success">Selesai</span>
-                                    <a href="#" class="btn btn-primary btn-sm float-end rounded-3">Lihat Detail</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
+                @endforeach
 
+            </div>
+
+            <div class="mt-4 d-flex justify-content-center">
+                {{ $histories->links('pagination::bootstrap-5') }}
             </div>
 
         </div>

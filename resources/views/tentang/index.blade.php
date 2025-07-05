@@ -52,8 +52,8 @@
                         <div class="card icon-active p-4 rounded-5 shadow">
                             
                             <!-- Bagian Ikon + Judul -->
-                            <div class="d-flex align-items-center gap-3 mb-3">
-                                <div class="icon-wrapper d-flex justify-content-center align-items-center" 
+                            <div class="mb-3 d-flex justify-content-start align-items-center">
+                                <div class="icon-wrapper me-2" 
                                     style="background-color: #FEF9C3; color: #FACC15; width: 50px; height: 50px;">
                                     <i class='bxr bx-bookmark fs-4'></i>
                                 </div>
@@ -65,20 +65,7 @@
 
                             <!-- Isi Card -->
                             <div class="card-body pt-2">
-                                <ul class="list-unstyled">
-                                    <li class="d-flex align-items-center fs-5 mb-2">
-                                    <i class='bxr bx-caret-right me-2'></i>
-                                    <span>Menjalin hubungan baik</span>
-                                    </li>
-                                    <li class="d-flex align-items-center fs-5 mb-2">
-                                    <i class='bxr bx-caret-right me-2'></i>
-                                    <span>Berkomunikasi secara aktif</span>
-                                    </li>
-                                    <li class="d-flex align-items-center fs-5">
-                                    <i class='bxr bx-caret-right me-2'></i>
-                                    <span>Kolaborasi dengan tim</span>
-                                    </li>
-                                </ul>
+                                <p style="text-align: justify">Menjadi komunitas seni dan edukasi yang berperan aktif dalam mencerdaskan kehidupan bangsa melalui pengembangan kreativitas anak usia dini dan pemberdayaan generasi muda melalui seni lukis mural yang inspiratif dan edukatif.</p>
                             </div>
                             
                         </div>
@@ -88,8 +75,8 @@
                         <div class="card icon-active p-4 rounded-5 shadow">
                             
                             <!-- Bagian Ikon + Judul -->
-                            <div class="d-flex align-items-center gap-3 mb-3">
-                                <div class="icon-wrapper d-flex justify-content-center align-items-center" 
+                            <div class="mb-3 d-flex justify-content-start align-items-center">
+                                <div class="icon-wrapper me-2" 
                                     style="background-color: #CFFAFE; color: #06B6D4; width: 50px; height: 50px;">
                                     <i class='bxr bx-hourglass fs-4'></i>
                                 </div>
@@ -101,20 +88,7 @@
 
                             <!-- Isi Card -->
                             <div class="card-body pt-2">
-                                <ul class="list-unstyled">
-                                    <li class="d-flex align-items-center fs-5 mb-2">
-                                    <i class='bxr bx-caret-right me-2'></i>
-                                    <span>Menjalin hubungan baik</span>
-                                    </li>
-                                    <li class="d-flex align-items-center fs-5 mb-2">
-                                    <i class='bxr bx-caret-right me-2'></i>
-                                    <span>Berkomunikasi secara aktif</span>
-                                    </li>
-                                    <li class="d-flex align-items-center fs-5">
-                                    <i class='bxr bx-caret-right me-2'></i>
-                                    <span>Kolaborasi dengan tim</span>
-                                    </li>
-                                </ul>
+                                <p style="text-align: justify">Berkontribusi dalam peningkatan kualitas pendidikan dasar melalui pendekatan kreatif dan edukatif berbasis seni lukis mural yang dirancang khusus untuk anak-anak sekolah dasar atau sebaya sebagai upaya menumbuhkan minat belajar dan daya imajinasi.</p>
                             </div>
                             
                         </div>
@@ -135,77 +109,77 @@
                     <h1 class="mb-4"><span class="span">8</span> Sikap Dasar</h1>
                 </div>
 
-                <div class="row justify-content-evenly mx-3">
+                <div class="row justify-content-evenly mx-3" style="text-align: justify">
         
-                        <div class="col-lg-3 col-md-6 col-sm-6 my-3">
-                            <div class="card icon-active p-4 rounded-5 shadow">
+                        <div class="col-lg-3 col-md-6 col-sm-6 my-3 d-flex">
+                            <div class="card icon-active p-4 rounded-5 shadow h-100">
                                 <div class="card-body">
                                     <h5 class="card-title">Suka Rela</h5>
                                     <hr>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                    <p class="card-text">Semua pihak yang terlibat mengikuti kegiatan ini dengan penuh kerelaan hati. Mereka terlibat tanpa paksaan dan semua pendanaan kegiatan berasal dari iuran pihak yang terlibat.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 my-3">
-                            <div class="card icon-active p-4 rounded-5 shadow">
+                        <div class="col-lg-3 col-md-6 col-sm-6 my-3 d-flex">
+                            <div class="card icon-active p-4 rounded-5 shadow h-100">
                                 <div class="card-body">
-                                    <h5 class="card-title">Menjalin Relasi</h5>
+                                    <h5 class="card-title">Antusias</h5>
                                     <hr>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                    <p class="card-text">Semua pihak bersemangat dalam melaksanakan setiap proses kegiatan. Saling memberikan narasi positif dan optimisme akan keberhasilan kegiatan.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 my-3">
-                            <div class="card icon-active p-4 rounded-5 shadow">
+                        <div class="col-lg-3 col-md-6 col-sm-6 my-3 d-flex">
+                            <div class="card icon-active p-4 rounded-5 shadow h-100">
                                 <div class="card-body">
-                                    <h5 class="card-title">Menjalin Relasi</h5>
+                                    <h5 class="card-title">Siap Silaturahmi</h5>
                                     <hr>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                    <p class="card-text">Terbuka untuk silaturahmi kepada anak-anak, relawan maupun masyarakat, serta bersedia membangun rasa kedekatan dengan komunikasi yang baik.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 my-3">
-                            <div class="card icon-active p-4 rounded-5 shadow">
+                        <div class="col-lg-3 col-md-6 col-sm-6 my-3 d-flex">
+                            <div class="card icon-active p-4 rounded-5 shadow h-100">
                                 <div class="card-body">
-                                    <h5 class="card-title">Menjalin Relasi</h5>
+                                    <h5 class="card-title">Kreatif</h5>
                                     <hr>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                    <p class="card-text">Semua pihak bersikap kreatif dalam memanfaatkan sumber daya yang ada untuk mencapai tujuan kegiatan.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 my-3">
-                            <div class="card icon-active p-4 rounded-5 shadow">
+                        <div class="col-lg-3 col-md-6 col-sm-6 my-3 d-flex">
+                            <div class="card icon-active p-4 rounded-5 shadow h-100">
                                 <div class="card-body">
-                                    <h5 class="card-title">Menjalin Relasi</h5>
+                                    <h5 class="card-title">Siap Bekerja Sama</h5>
                                     <hr>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                    <p class="card-text">Setiap relawan saling menghargai dan saling terbuka dengan peran dan tanggung jawab masing-masing. Tidak sungkan untuk meminta bantuan dan siap membantu sesama relawan demi kesuksesan kegiatan. Bersikap solutif dan kontributif dalam penyelesaian tantangan.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 my-3">
-                            <div class="card icon-active p-4 rounded-5 shadow">
+                        <div class="col-lg-3 col-md-6 col-sm-6 my-3 d-flex">
+                            <div class="card icon-active p-4 rounded-5 shadow h-100">
                                 <div class="card-body">
-                                    <h5 class="card-title">Menjalin Relasi</h5>
+                                    <h5 class="card-title">Bertanggung Jawab</h5>
                                     <hr>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                    <p class="card-text">Semua pihak memiliki komitmen untuk menjalankan peran dan tugas yang sudah diberikan dari awal hingga akhir kegiatan.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 my-3">
-                            <div class="card icon-active p-4 rounded-5 shadow">
+                        <div class="col-lg-3 col-md-6 col-sm-6 my-3 d-flex">
+                            <div class="card icon-active p-4 rounded-5 shadow h-100">
                                 <div class="card-body">
-                                    <h5 class="card-title">Menjalin Relasi</h5>
+                                    <h5 class="card-title">Tulus</h5>
                                     <hr>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                    <p class="card-text">Semua pihak percaya bahwa ini bukan hanya tentang diri relawan dan masyarakat semata, tetapi juga tentang demi anak-anak Indonesia yang lebih baik melalui seni dan edukasi serta karakter diri yang lebih kuat.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 my-3">
-                            <div class="card icon-active p-4 rounded-5 shadow">
+                        <div class="col-lg-3 col-md-6 col-sm-6 my-3 d-flex">
+                            <div class="card icon-active p-4 rounded-5 shadow h-100">
                                 <div class="card-body">
-                                    <h5 class="card-title">Menjalin Relasi</h5>
+                                    <h5 class="card-title">Siap Belajar</h5>
                                     <hr>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                    <p class="card-text">Semua pihak siap untuk saling belajar, terbuka untuk menerima pembelajaran khususnya bagaimana berkomunikasi dengan masyarakat dan mengelola anak-anak.</p>
                                 </div>
                             </div>
                         </div>
@@ -215,5 +189,273 @@
         </div>
     </section>
     {{-- Akkhir Tentang 8 Sikap Dasar --}}
+
+     {{-- Tentang Syarat --}}
+    <section class="container-fluid">
+        <div class="tentang py-5 mx-3 rounded-4 shadow">
+            <div class="beranda-aktivitas">
+
+                <div class="text-center mb-5">
+                    <h1 class="mb-4">Syarat & Tugas</h1>
+                </div>
+
+                <div class="row justify-content-center mx-3">
+        
+                    <div class="col-lg-4 col-md-6 col-sm-12 my-3">
+                        <div class="card icon-active p-4 rounded-5 shadow">
+                            
+                            <!-- Bagian Ikon + Judul -->
+                            <div class="mb-3">
+                                <h5 class="card-title m-0">Ilustrator</h5>
+                            </div>
+
+                            <!-- Garis -->
+                            <hr class="mx-0">
+
+                            <!-- Isi Card -->
+                            <div class="card-body pt-2">
+                                <ul class="list-unstyled">
+                                    <li class="d-flex align-items-center">
+                                    <p>Mengumpulkan ide gambar dan membuat sketsa gambar</p>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                    <p>Memastikan gambar yang dibuat dan diwarnai bersama berkualitas baik</p>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                    <p>Membuat check list kebutuhan teknis menggambar</p>
+                                    </li>
+                                </ul>
+
+                                <hr class="mx-0">
+
+                                <ul class="list-unstyled">
+                                    <li class="d-flex align-items-center">
+                                    <p>Mempunyai skill dalam menggambar yang berkualitas</p>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                    <p>Bersedia mengikuti seluruh kegiatan tembokpedia termasuk dalam hadir pada hari briefing, hari sketsa, hari pelaksanaan dan refleksi.</p>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 my-3">
+                        <div class="card icon-active p-4 rounded-5 shadow">
+                            
+                            <!-- Bagian Ikon + Judul -->
+                            <div class="mb-3">
+                                <h5 class="card-title m-0">Fasilitator</h5>
+                            </div>
+
+                            <!-- Garis -->
+                            <hr class="mx-0">
+
+                            <!-- Isi Card -->
+                            <div class="card-body pt-2">
+                                <ul class="list-unstyled">
+                                    <li class="d-flex align-items-center fs-5 mb-2">
+                                    <i class='bxr bx-caret-right me-2'></i>
+                                    <span>Menjalin hubungan baik</span>
+                                    </li>
+                                    <li class="d-flex align-items-center fs-5 mb-2">
+                                    <i class='bxr bx-caret-right me-2'></i>
+                                    <span>Berkomunikasi secara aktif</span>
+                                    </li>
+                                    <li class="d-flex align-items-center fs-5">
+                                    <i class='bxr bx-caret-right me-2'></i>
+                                    <span>Kolaborasi dengan tim</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Garis -->
+                            <hr class="mx-0">
+
+                            <!-- Isi Card -->
+                            <div class="card-body pt-2">
+                                <ul class="list-unstyled">
+                                    <li class="d-flex align-items-center fs-5 mb-2">
+                                    <i class='bxr bx-caret-right me-2'></i>
+                                    <span>Menjalin hubungan baik</span>
+                                    </li>
+                                    <li class="d-flex align-items-center fs-5 mb-2">
+                                    <i class='bxr bx-caret-right me-2'></i>
+                                    <span>Berkomunikasi secara aktif</span>
+                                    </li>
+                                    <li class="d-flex align-items-center fs-5">
+                                    <i class='bxr bx-caret-right me-2'></i>
+                                    <span>Kolaborasi dengan tim</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 my-3">
+                        <div class="card icon-active p-4 rounded-5 shadow">
+                            
+                            <!-- Bagian Ikon + Judul -->
+                            <div class="mb-3">
+                                <h5 class="card-title m-0">Dokumentator</h5>
+                            </div>
+
+                            <!-- Garis -->
+                            <hr class="mx-0">
+
+                            <!-- Isi Card -->
+                            <div class="card-body pt-2">
+                                <ul class="list-unstyled">
+                                    <li class="d-flex align-items-center fs-5 mb-2">
+                                    <i class='bxr bx-caret-right me-2'></i>
+                                    <span>Menjalin hubungan baik</span>
+                                    </li>
+                                    <li class="d-flex align-items-center fs-5 mb-2">
+                                    <i class='bxr bx-caret-right me-2'></i>
+                                    <span>Berkomunikasi secara aktif</span>
+                                    </li>
+                                    <li class="d-flex align-items-center fs-5">
+                                    <i class='bxr bx-caret-right me-2'></i>
+                                    <span>Kolaborasi dengan tim</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Garis -->
+                            <hr class="mx-0">
+
+                            <!-- Isi Card -->
+                            <div class="card-body pt-2">
+                                <ul class="list-unstyled">
+                                    <li class="d-flex align-items-center fs-5 mb-2">
+                                    <i class='bxr bx-caret-right me-2'></i>
+                                    <span>Menjalin hubungan baik</span>
+                                    </li>
+                                    <li class="d-flex align-items-center fs-5 mb-2">
+                                    <i class='bxr bx-caret-right me-2'></i>
+                                    <span>Berkomunikasi secara aktif</span>
+                                    </li>
+                                    <li class="d-flex align-items-center fs-5">
+                                    <i class='bxr bx-caret-right me-2'></i>
+                                    <span>Kolaborasi dengan tim</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 my-3">
+                        <div class="card icon-active p-4 rounded-5 shadow">
+                            
+                            <!-- Bagian Ikon + Judul -->
+                            <div class="mb-3">
+                                <h5 class="card-title m-0">Logistik</h5>
+                            </div>
+
+                            <!-- Garis -->
+                            <hr class="mx-0">
+
+                            <!-- Isi Card -->
+                            <div class="card-body pt-2">
+                                <ul class="list-unstyled">
+                                    <li class="d-flex align-items-center fs-5 mb-2">
+                                    <i class='bxr bx-caret-right me-2'></i>
+                                    <span>Menjalin hubungan baik</span>
+                                    </li>
+                                    <li class="d-flex align-items-center fs-5 mb-2">
+                                    <i class='bxr bx-caret-right me-2'></i>
+                                    <span>Berkomunikasi secara aktif</span>
+                                    </li>
+                                    <li class="d-flex align-items-center fs-5">
+                                    <i class='bxr bx-caret-right me-2'></i>
+                                    <span>Kolaborasi dengan tim</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Garis -->
+                            <hr class="mx-0">
+
+                            <!-- Isi Card -->
+                            <div class="card-body pt-2">
+                                <ul class="list-unstyled">
+                                    <li class="d-flex align-items-center fs-5 mb-2">
+                                    <i class='bxr bx-caret-right me-2'></i>
+                                    <span>Menjalin hubungan baik</span>
+                                    </li>
+                                    <li class="d-flex align-items-center fs-5 mb-2">
+                                    <i class='bxr bx-caret-right me-2'></i>
+                                    <span>Berkomunikasi secara aktif</span>
+                                    </li>
+                                    <li class="d-flex align-items-center fs-5">
+                                    <i class='bxr bx-caret-right me-2'></i>
+                                    <span>Kolaborasi dengan tim</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 my-3">
+                        <div class="card icon-active p-4 rounded-5 shadow">
+                            
+                            <!-- Bagian Ikon + Judul -->
+                            <div class="mb-3">
+                                <h5 class="card-title m-0">Koordinator Lapangan</h5>
+                            </div>
+
+                            <!-- Garis -->
+                            <hr class="mx-0">
+
+                            <!-- Isi Card -->
+                            <div class="card-body pt-2">
+                                <ul class="list-unstyled">
+                                    <li class="d-flex align-items-center fs-5 mb-2">
+                                    <i class='bxr bx-caret-right me-2'></i>
+                                    <span>Menjalin hubungan baik</span>
+                                    </li>
+                                    <li class="d-flex align-items-center fs-5 mb-2">
+                                    <i class='bxr bx-caret-right me-2'></i>
+                                    <span>Berkomunikasi secara aktif</span>
+                                    </li>
+                                    <li class="d-flex align-items-center fs-5">
+                                    <i class='bxr bx-caret-right me-2'></i>
+                                    <span>Kolaborasi dengan tim</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Garis -->
+                            <hr class="mx-0">
+
+                            <!-- Isi Card -->
+                            <div class="card-body pt-2">
+                                <ul class="list-unstyled">
+                                    <li class="d-flex align-items-center fs-5 mb-2">
+                                    <i class='bxr bx-caret-right me-2'></i>
+                                    <span>Menjalin hubungan baik</span>
+                                    </li>
+                                    <li class="d-flex align-items-center fs-5 mb-2">
+                                    <i class='bxr bx-caret-right me-2'></i>
+                                    <span>Berkomunikasi secara aktif</span>
+                                    </li>
+                                    <li class="d-flex align-items-center fs-5">
+                                    <i class='bxr bx-caret-right me-2'></i>
+                                    <span>Kolaborasi dengan tim</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- Akhir Tentang Syarat --}}
 
 </x-layout>
